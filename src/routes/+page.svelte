@@ -1,11 +1,14 @@
 <!-- HomePage -->
 
 <script lang="ts">
+  import { resolve } from "$app/paths";
   import Button from "$lib/components/Button.svelte";
+
+  const heroImage = resolve("/images/hero.jpg" as any);
 </script>
 
 <svelte:head>
-  <title>Tactile Sanctuary | Find Your Balance</title>
+  <title>Ann Yoga | Find Your Balance</title>
 </svelte:head>
 
 <section
@@ -54,7 +57,7 @@
         <img
           alt="Yoga in nature"
           class="w-full h-full object-cover"
-          src="/images/hero.jpg"
+          src={heroImage}
         />
       </div>
       <!-- Decorative Element -->
