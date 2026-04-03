@@ -34,7 +34,7 @@
   >
     <div class="lg:col-span-5 z-10">
       <span
-        class="font-manrope text-xs tracking-[0.2em] uppercase text-primary font-bold mb-4 block"
+        class="font-manrope text-xs tracking-[0.2em] uppercase text-primary font-bold mb-4 block mt-8 lg:mt-0"
         >Est. 2024 • Organic Wellness</span
       >
       <h1
@@ -49,23 +49,18 @@
         rhythm. Experience intentional movement in a space crafted for silence
         and soul.
       </p>
-      <div class="flex flex-col sm:flex-row gap-4">
+      <div class="hidden lg:flex flex-col sm:flex-row gap-4">
         <!-- Using explicit button to maintain exact reference padding/size -->
         <button
           class="bg-primary text-on-primary px-10 py-5 cursor-pointer rounded-lg font-semibold text-lg hover:shadow-xl transition-all bg-gradient-to-br from-primary to-primary-container"
         >
           Book a Class
         </button>
-        <button
-          class="flex items-center gap-3 px-8 py-5 text-on-surface font-semibold cursor-pointer hover:translate-x-1 transition-transform"
-        >
-          View Schedule
-          <span class="material-symbols-outlined">arrow_forward</span>
-        </button>
       </div>
     </div>
 
-    <div class="lg:col-span-7 relative flex justify-center lg:justify-end">
+    <!-- Image section in its own div to manage grid/flow -->
+    <div class="lg:col-span-7 relative flex flex-col items-center lg:items-end">
       <div
         class="w-11/12 lg:w-10/12 aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl transform lg:rotate-2 lg:translate-x-12 scale-95 lg:scale-90"
       >
@@ -75,6 +70,16 @@
           src={heroImage}
         />
       </div>
+      
+      <!-- Mobile-only button after the image -->
+      <div class="flex lg:hidden mt-12 w-full px-4">
+        <button
+          class="bg-primary text-on-primary w-full py-5 cursor-pointer rounded-lg font-semibold text-lg hover:shadow-xl transition-all bg-gradient-to-br from-primary to-primary-container"
+        >
+          Book a Class
+        </button>
+      </div>
+
       <!-- Decorative Element -->
       <div
         class="absolute -bottom-10 -left-10 w-64 h-64 bg-secondary-container rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"
@@ -203,7 +208,7 @@
         />
       </div>
       <div
-        class="absolute -top-12 -right-12 p-8 bg-tertiary-fixed rounded-2xl shadow-xl max-w-xs transform rotate-3"
+        class="absolute -top-12 -right-4 lg:-right-12 p-8 bg-tertiary-fixed rounded-2xl shadow-xl max-w-[calc(100vw-4rem)] sm:max-w-xs transform rotate-3"
       >
         <p
           class="font-notoserif italic text-on-tertiary-fixed text-lg leading-relaxed"
