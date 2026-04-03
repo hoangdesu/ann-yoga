@@ -21,20 +21,26 @@
 
 <div class="flex flex-col min-h-screen">
   <Navbar />
-  <main class="flex-1">
+  <main class="flex-1" style="view-transition-name: page-content;">
     <slot />
   </main>
   <Footer />
 </div>
 
 <style>
-  /* Cross-fade for the entire page */
-  :global(::view-transition-old(root)) {
+  /* Only animate the page-content area — navbar is excluded */
+  :global(::view-transition-old(page-content)) {
     animation: fade-out 0.2s ease-out both;
   }
 
-  :global(::view-transition-new(root)) {
+  :global(::view-transition-new(page-content)) {
     animation: fade-in 0.25s ease-in both;
+  }
+
+  /* Prevent the root transition from animating (just swap instantly) */
+  :global(::view-transition-old(root)),
+  :global(::view-transition-new(root)) {
+    animation: none;
   }
 
   @keyframes fade-out {
