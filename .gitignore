@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build artifacts
+.svelte-kit/
+build/
+dist/
+.vite/
+
+# Environment
+# .env
+# .env.*
+# !.env.example
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# IDE Files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.gradle
+.project
+.settings
+.classpath
+
+# Compiled files
+*.tsbuildinfo
+*.js.map
+*.css.map
+
+# Testing / coverage
+coverage/
+
+# Optional local tooling
+.gemini/

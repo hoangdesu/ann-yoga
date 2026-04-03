@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tactile Sanctuary | Find Your Balance</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-low": "#f4f4ef",
+              "on-primary": "#ffffff",
+              "tertiary-fixed": "#ffdbc9",
+              "on-error": "#ffffff",
+              "surface-dim": "#dadad5",
+              "inverse-surface": "#2f312e",
+              "on-tertiary": "#ffffff",
+              "surface-container-highest": "#e3e3de",
+              "background": "#fafaf5",
+              "secondary-container": "#fed4bf",
+              "on-primary-fixed": "#161f00",
+              "on-tertiary-fixed-variant": "#6c3919",
+              "on-secondary-fixed-variant": "#5c4031",
+              "on-tertiary-fixed": "#331200",
+              "error-container": "#ffdad6",
+              "surface-container-lowest": "#ffffff",
+              "outline": "#76786b",
+              "secondary": "#765847",
+              "on-surface-variant": "#46483c",
+              "inverse-on-surface": "#f1f1ec",
+              "tertiary-fixed-dim": "#ffb68d",
+              "outline-variant": "#c6c8b8",
+              "primary": "#56642b",
+              "inverse-primary": "#bdce89",
+              "surface-container-high": "#e8e8e3",
+              "primary-fixed-dim": "#bdce89",
+              "on-secondary": "#ffffff",
+              "surface": "#fafaf5",
+              "on-primary-container": "#253000",
+              "surface-tint": "#56642b",
+              "tertiary-container": "#c7845d",
+              "primary-fixed": "#d9eaa3",
+              "secondary-fixed-dim": "#e6bea9",
+              "error": "#ba1a1a",
+              "on-secondary-fixed": "#2c1609",
+              "on-background": "#1a1c19",
+              "secondary-fixed": "#ffdbc9",
+              "on-surface": "#1a1c19",
+              "on-error-container": "#93000a",
+              "tertiary": "#89502e",
+              "surface-variant": "#e3e3de",
+              "surface-container": "#eeeee9",
+              "on-tertiary-container": "#4b2002",
+              "on-primary-fixed-variant": "#3e4c16",
+              "on-secondary-container": "#795a49",
+              "surface-bright": "#fafaf5",
+              "primary-container": "#8a9a5b"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fafaf5;
+            color: #1a1c19;
+            font-family: 'Manrope', sans-serif;
+        }
+        .font-notoserif { font-family: 'Noto Serif', serif; }
+        .font-manrope { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fafaf5]/80 backdrop-blur-md shadow-[0_10px_40px_-15px_rgba(26,28,25,0.04)]">
+<div class="flex justify-between items-center h-20 px-8 max-w-7xl mx-auto">
+<div class="font-notoserif text-2xl font-bold text-olive-900 tracking-tight">Tactile Sanctuary</div>
+<div class="hidden md:flex space-x-12">
+<a class="text-olive-900 border-b-2 border-primary pb-1 font-semibold font-notoserif text-lg tracking-tight" href="#">Home</a>
+<a class="text-stone-600 font-medium font-notoserif text-lg tracking-tight hover:text-primary transition-colors duration-300" href="#">Classes</a>
+<a class="text-stone-600 font-medium font-notoserif text-lg tracking-tight hover:text-primary transition-colors duration-300" href="#">Pricing</a>
+<a class="text-stone-600 font-medium font-notoserif text-lg tracking-tight hover:text-primary transition-colors duration-300" href="#">About</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-lg font-medium tracking-wide scale-95 active:scale-90 transition-transform shadow-sm hover:shadow-md bg-gradient-to-br from-primary to-primary-container">
+                Book Now
+            </button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-5 z-10">
+<span class="font-manrope text-xs tracking-[0.2em] uppercase text-primary font-bold mb-4 block">Est. 2024 • Organic Wellness</span>
+<h1 class="font-notoserif text-6xl md:text-7xl lg:text-8xl leading-[1.1] text-on-surface mb-8 tracking-tighter">
+                        Find Your <br/><span class="italic text-primary">Balance</span>
+</h1>
+<p class="font-manrope text-lg text-on-surface-variant max-w-md mb-10 leading-relaxed">
+                        A boutique sanctuary designed to ground your practice in nature’s rhythm. Experience intentional movement in a space crafted for silence and soul.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-lg font-semibold text-lg hover:shadow-xl transition-all bg-gradient-to-br from-primary to-primary-container">
+                            Book a Class
+                        </button>
+<button class="flex items-center gap-3 px-8 py-5 text-on-surface font-semibold hover:translate-x-1 transition-transform">
+                            View Schedule
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="lg:col-span-7 relative">
+<div class="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl transform lg:rotate-2 lg:translate-x-12">
+<img alt="Yoga in nature" class="w-full h-full object-cover" data-alt="Serene woman practicing yoga tree pose on a wooden deck surrounded by lush green tropical forest during soft misty morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwmeepupUoKjp7564in3xWUNcDBt674_MPdeJ6PL5XGn8eQ3pg9uHrmKN-TtScz17Z4IPXv85a5bFEX2huADvzaFEmwUxBxgNWei3j4tLL72WplfQbAawMfREcyIrC4gZ1iqiXnNqv2dvQuGit6MzxBqzN9-qGs_fDbAJQh7pD_XIMqXh_eaJuLO9Mae6BDf6QNCORX_fKuXORLwEjnjOzchRf-wUPLb__k2psn5JE-zY418RCbPIQZDbAlumfGJZ1YQ4fIgIFFZs"/>
+</div>
+<!-- Decorative Element -->
+<div class="absolute -bottom-10 -left-10 w-64 h-64 bg-secondary-container rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
+</div>
+</div>
+</section>
+<!-- Featured Classes (Bento Style Cards) -->
+<section class="py-32 px-8 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-20">
+<div class="max-w-xl">
+<h2 class="font-notoserif text-4xl md:text-5xl mb-6 text-on-surface">Curated Movement</h2>
+<p class="font-manrope text-lg text-on-surface-variant">Whether you seek a rigorous flow or a deep stillness, our classes are tailored to ground your energy and elevate your spirit.</p>
+</div>
+<a class="mt-8 md:mt-0 inline-flex items-center gap-2 text-primary font-bold hover:underline decoration-2 underline-offset-8" href="#">
+                        View all styles <span class="material-symbols-outlined">north_east</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Vinyasa Card -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="aspect-video overflow-hidden">
+<img alt="Vinyasa Flow" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Dynamic yoga pose showing a woman in a powerful flow on a neutral background with warm earth tones and soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqcrZEuCBTXHEvqCroVpBu63TxyRl8IsY0BW87kvDXwqDokFRpA9Jk0uFlauWxjR12sn4A1qEKqu3syJ0IdUJfAeWOg7xNwY30NxubyTAfCt2GKenFZI8gp2qxPx5zh6aCpd0oGJuW7pTz2MZbuu7Dhe7zdynvBcNWW3xWDPV08NX2EuvNAadzD4Mt6QcbBh0EX2T0SBnQrWwVpLNzM_sV2IX4DRrqPNz-hkhXtvquvOMLRAhn6JPmdX7Rtr-XsWejDHFPFCBfY4I"/>
+</div>
+<div class="p-8">
+<h3 class="font-notoserif text-2xl mb-3 text-on-surface">Vinyasa Flow</h3>
+<p class="font-manrope text-on-surface-variant mb-6 leading-relaxed">A rhythmic, breath-led sequence designed to build heat and fluid mobility throughout the body.</p>
+<span class="text-sm font-bold tracking-widest text-secondary uppercase">Level: Intermediate</span>
+</div>
+</div>
+<!-- Hatha Card -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="aspect-video overflow-hidden">
+<img alt="Hatha Yoga" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Person sitting in a calm meditative lotus position at sunset with a soft golden glow illuminating their silhouette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAXsnzC5a_dHGTtetzX6GSqgCIlmsCuCqBpb4OKZG8ZANoj4_ObHAWY45UmmGW6AdMiBwEqfH6k2mdEed50ZiVKYSzVyzyxxDg9xo4KbcaXZ0qmAAKSgB4koBEoBjgBRWFg6WIoAfu4fqyzUc8NwZtnW5EWbVHgNTS-mAITXXxcNsj4MnviV-nBv5ZchaJ9jmPv_3s5wWWZQiDJb1tFrKoG8rTAqLMTVRsCw_UiewwGpD3oaingoT3W9jwEMT1fnooG38PKQD_6Bs"/>
+</div>
+<div class="p-8">
+<h3 class="font-notoserif text-2xl mb-3 text-on-surface">Hatha Yoga</h3>
+<p class="font-manrope text-on-surface-variant mb-6 leading-relaxed">Focus on foundational alignment and mindful breathing to bring balance to the mind and body.</p>
+<span class="text-sm font-bold tracking-widest text-secondary uppercase">Level: All Levels</span>
+</div>
+</div>
+<!-- Restorative Card -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="aspect-video overflow-hidden">
+<img alt="Restorative Yoga" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Quiet yoga studio interior with soft linen pillows, candles, and a warm atmosphere of deep relaxation and peace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGoH5rH2TyTbcxf3f67pcfB_I-TrIFrp21cCROU10WteWFjhVHe6RJ3vtWYqdDEi0b6l_BTGSkbdfY_RPCC0De2T0RB7qVqDsdW3mBADkuKwucqlT3S2TUxidEyUctUmfmRvB4iozrOJLbUDvCvR9B0FS4wZ_JM7BjBEjVq819lOFxf5CmRC2DQoL1oue82MOvfQxj_tt_OiFk6hLI3Si8YUX0KBVoZiebtTKOPei6dXkOOfBxCaVcrFbdqF-QTUP4MGdljLaAp6w"/>
+</div>
+<div class="p-8">
+<h3 class="font-notoserif text-2xl mb-3 text-on-surface">Restorative</h3>
+<p class="font-manrope text-on-surface-variant mb-6 leading-relaxed">Deeply healing practice using props to support long-held poses, inviting profound nervous system release.</p>
+<span class="text-sm font-bold tracking-widest text-secondary uppercase">Level: Gentle</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us - Asymmetric Layout -->
+<section class="py-40 px-8">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="relative order-2 lg:order-1">
+<div class="w-full h-[600px] bg-surface-variant rounded-full overflow-hidden relative">
+<img alt="Instructor guiding student" class="w-full h-full object-cover mix-blend-multiply grayscale hover:grayscale-0 transition-all duration-700" data-alt="A professional yoga instructor gently correcting a student's alignment in a bright studio with soft natural light streaming in" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBojqFp4FHzbyUtl28qoI4QL2TCB3JBvjPWNE--Bfkheka3tcmJ-FYdg-g1Klapyf85QO_xscJpDlLBt0bzYysX_nfJwr47S1pD55Vxjarkiqka-POHVoN5zttNfjhAqaE9vHydMlICoYNMD67nsUdjPloMNlyfwvpKQ77ItSQfwxgwiv5YyaIh2cWRxzSgxUfmcITrCBcyeRSkWHK_6Lc1wdQPd1j7saIgdaTunciGrW_OKHPhHNuDObkhyySzcLwH1srnJXGqO4o"/>
+</div>
+<div class="absolute -top-12 -right-12 p-8 bg-tertiary-fixed rounded-2xl shadow-xl max-w-xs transform rotate-3">
+<p class="font-notoserif italic text-on-tertiary-fixed text-lg leading-relaxed">
+                            "The space feels like a second home. The intentionality in every detail is truly healing."
+                        </p>
+<p class="mt-4 font-manrope font-bold text-sm uppercase tracking-widest text-tertiary">Sarah J., Member</p>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<h2 class="font-notoserif text-4xl md:text-5xl mb-12 text-on-surface leading-tight">Beyond the Mat, <br/>A Sacred Community</h2>
+<div class="space-y-12">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-primary-container rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">spa</span>
+</div>
+<div>
+<h4 class="font-manrope font-bold text-xl mb-2">Sustainable Philosophy</h4>
+<p class="font-manrope text-on-surface-variant leading-relaxed">We utilize eco-friendly materials and carbon-neutral studio operations to ensure our practice honors the earth as much as our bodies.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container" style="font-variation-settings: 'FILL' 1;">groups</span>
+</div>
+<div>
+<h4 class="font-manrope font-bold text-xl mb-2">Small Group Focus</h4>
+<p class="font-manrope text-on-surface-variant leading-relaxed">Intimate class sizes ensure personalized guidance and hands-on adjustments from our world-class instructors.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-surface-container-highest rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<div>
+<h4 class="font-manrope font-bold text-xl mb-2">Expert Pedagogy</h4>
+<p class="font-manrope text-on-surface-variant leading-relaxed">Our teachers are lifelong students with over 500+ hours of advanced certification in diverse lineages.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter CTA / Glassmorphism -->
+<section class="py-24 px-8">
+<div class="max-w-5xl mx-auto rounded-[3rem] bg-stone-900 overflow-hidden relative p-12 md:p-24 text-center">
+<div class="absolute inset-0 opacity-20">
+<img alt="Texture background" class="w-full h-full object-cover" data-alt="Abstract soft focus of morning sunlight hitting a textured plaster wall with leaf shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBobp6NdYKVBxMqDgytS5bfnveLHDxWyPkiaiKjhB1Tiilt0ZW86Nckgzf5HNghgMygLyWLTyZYHoYKsxppWp6ellOGFK7Ye9wBOsUS-tJBbW2GR1lSnMQdyHasHXLP0WriNCorVUwBUr-Qe8m6FoVco2wftWvlwDjf7RAeBCxpXwbB7efAhGed_GYvSzR_LYscnKidHtEi5rFBj9leQfp7U_9eXgRBjkE8bPw3UhCkl3MzFYsuIVNauIjWhtJAJbHWkN2h0_14yO4"/>
+</div>
+<div class="relative z-10">
+<h2 class="font-notoserif text-4xl md:text-5xl text-white mb-6">Begin Your Journey</h2>
+<p class="text-stone-300 font-manrope text-lg mb-12 max-w-xl mx-auto">Join our community newsletter for mindful insights, studio updates, and 15% off your first class pack.</p>
+<form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+<input class="flex-grow bg-white/10 border-none rounded-lg px-6 py-4 text-white placeholder:text-stone-500 focus:ring-2 focus:ring-primary-container outline-none transition-all" placeholder="Your email address" type="email"/>
+<button class="bg-primary-container text-on-primary-container px-8 py-4 rounded-lg font-bold hover:bg-inverse-primary transition-colors">Subscribe</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-20 bg-stone-100">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 py-16 px-8 max-w-7xl mx-auto border-t border-stone-200/30">
+<div>
+<div class="font-notoserif text-xl font-semibold text-stone-900 mb-6">Tactile Sanctuary</div>
+<p class="font-manrope text-sm leading-relaxed text-stone-600 mb-8 max-w-xs">
+                    Rooted in tradition, reaching for the light. Our studio is a space for modern practitioners to find ancient peace.
+                </p>
+<div class="flex gap-4">
+<a class="text-stone-500 hover:text-primary transition-colors" href="#">Instagram</a>
+<a class="text-stone-500 hover:text-primary transition-colors" href="#">YouTube</a>
+</div>
+</div>
+<div>
+<h5 class="font-bold text-stone-900 mb-6 font-manrope text-sm uppercase tracking-widest">Navigation</h5>
+<ul class="space-y-4 font-manrope text-sm text-stone-500">
+<li><a class="hover:text-primary transition-all" href="#">Studio Schedule</a></li>
+<li><a class="hover:text-primary transition-all" href="#">Workshops &amp; Events</a></li>
+<li><a class="hover:text-primary transition-all" href="#">Private Sessions</a></li>
+<li><a class="hover:text-primary transition-all" href="#">Teacher Training</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-stone-900 mb-6 font-manrope text-sm uppercase tracking-widest">Visit Us</h5>
+<p class="font-manrope text-sm text-stone-500 mb-4">122 Sage Creek Blvd<br/>Portland, OR 97201</p>
+<p class="font-manrope text-sm text-stone-500">hello@tactilesanctuary.com<br/>+1 (503) 555-0192</p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 pb-12">
+<div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-stone-200/30 font-manrope text-xs text-stone-500 tracking-wide">
+<p>© 2024 Tactile Sanctuary Yoga Studio. All rights reserved.</p>
+<div class="flex gap-8 mt-4 md:mt-0">
+<a class="hover:underline" href="#">Privacy Policy</a>
+<a class="hover:underline" href="#">Terms of Service</a>
+<a class="hover:underline" href="#">Contact Us</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
