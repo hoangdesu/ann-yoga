@@ -9,6 +9,21 @@
 
 <svelte:head>
   <title>Ann Yoga | Find Your Balance</title>
+  <meta name="description" content="Find your balance at Ann Yoga. A boutique sanctuary designed to ground your practice in nature’s rhythm. Experience intentional movement in a space crafted for silence and soul." />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hoangdesu.github.io/ann-yoga/" />
+  <meta property="og:title" content="Ann Yoga | Holistic Wellness & Yoga Studio" />
+  <meta property="og:description" content="Find your balance at Ann Yoga. A boutique sanctuary designed to ground your practice in nature’s rhythm. Experience intentional movement in a space crafted for silence and soul." />
+  <meta property="og:image" content="https://hoangdesu.github.io/ann-yoga/images/hero.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://hoangdesu.github.io/ann-yoga/" />
+  <meta property="twitter:title" content="Ann Yoga | Holistic Wellness & Yoga Studio" />
+  <meta property="twitter:description" content="Find your balance at Ann Yoga. A boutique sanctuary designed to ground your practice in nature’s rhythm. Experience intentional movement in a space crafted for silence and soul." />
+  <meta property="twitter:image" content="https://hoangdesu.github.io/ann-yoga/images/hero.jpg" />
 </svelte:head>
 
 <section
