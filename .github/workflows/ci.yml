@@ -21,11 +21,15 @@ jobs:
     - name: Use Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '20'
+        node-version: '24'
         cache: 'pnpm'
 
     - name: Install dependencies
       run: pnpm install
+
+    # Fix: SvelteKit projects require sync to generate the internal types and tsconfig.
+    - name: Sync SvelteKit types
+      run: pnpm exec svelte-kit sync
 
     - name: Check types and lint
       run: pnpm check
@@ -33,8 +37,7 @@ jobs:
     - name: Build
       run: pnpm build
 
-    # Example: Push to GitHub Pages if on main branch and build success
-    # Note: Requires setting up Pages in the repository settings to use Actions.
+    # Deployment for static site (e.g. GitHub Pages)
     - name: Upload artifact for deployment
       if: github.ref == 'refs/heads/main'
       uses: actions/upload-pages-artifact@v3
