@@ -6,6 +6,13 @@ on:
   pull_request:
     branches: [ "main" ]
 
+# Set global environment variables
+env:
+  # Opt-in to Node 24 for actions to suppress deprecation warnings
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  # Define the base path for static site deployment on GitHub Pages
+  BASE_PATH: "/${{ github.event.repository.name }}"
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -36,6 +43,12 @@ jobs:
 
     - name: Build
       run: pnpm build
+      env:
+        # Pass the BASE_PATH to the SvelteKit build process
+        BASE_PATH: "/${{ github.event.repository.name }}"
+
+    - name: Disable Jekyll
+      run: touch build/.nojekyll
 
     # Deployment for static site (e.g. GitHub Pages)
     - name: Upload artifact for deployment
