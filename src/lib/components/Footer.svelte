@@ -10,8 +10,8 @@
         Rooted in tradition, reaching for the light. Our studio is a space for modern practitioners to find ancient peace.
       </p>
       <div class="flex gap-4">
-        <a class="text-stone-500 hover:text-primary transition-colors" href="#">Instagram</a>
-        <a class="text-stone-500 hover:text-primary transition-colors" href="#">YouTube</a>
+        <a class="text-stone-500 hover:text-primary transition-colors" href="/">Instagram</a>
+        <a class="text-stone-500 hover:text-primary transition-colors" href="/">YouTube</a>
       </div>
     </div>
     <div>
@@ -32,8 +32,8 @@
     <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-stone-200/30 font-manrope text-xs text-stone-500 tracking-wide">
       <p>© 2024 Tactile Sanctuary Yoga Studio. All rights reserved.</p>
       <div class="flex gap-8 mt-4 md:mt-0">
-        <a class="hover:underline" href="#">Privacy Policy</a>
-        <a class="hover:underline" href="#">Terms of Service</a>
+        <a class="hover:underline" href="/">Privacy Policy</a>
+        <a class="hover:underline" href="/">Terms of Service</a>
         <a class="hover:underline" href={resolve('/contact')}>Contact Us</a>
       </div>
     </div>

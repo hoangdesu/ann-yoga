@@ -80,7 +80,7 @@
       </div>
       <a
         class="mt-8 md:mt-0 inline-flex items-center gap-2 text-primary font-bold hover:underline decoration-2 underline-offset-8"
-        href="#"
+        href="/"
       >
         View all styles <span class="material-symbols-outlined">north_east</span
         >

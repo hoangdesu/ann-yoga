@@ -1,21 +1,19 @@
 <script lang="ts">
-  // Svelte 5: Define a formal interface for component props and use the $props() rune.
-  interface Props {
-    text?: string;
-    href?: string;
-    variant?: "primary" | "secondary" | "ghost";
-  }
-
+  // Svelte 5: Directly destructure $props() to ensure reactivity is maintained.
   let { 
     text = "", 
     href = "", 
     variant = "primary" 
-  } = $props<Props>();
+  } = $props<{ 
+    text?: string;
+    href?: string;
+    variant?: "primary" | "secondary" | "ghost";
+  }>();
 
   // Base styles for the button component.
   const baseClasses = "inline-flex items-center justify-center font-manrope rounded-lg transition-all duration-300";
 
-  // Svelte 5: Use $derived for state that changes based on other values.
+  // Reactive classes derived from props.
   const variantClasses = $derived(
     variant === "primary" ? "bg-gradient-to-br from-primary to-primary-container text-on-primary font-semibold tracking-wide shadow-sm hover:shadow-xl active:scale-95" :
     variant === "secondary" ? "bg-secondary-container text-on-secondary-container font-medium" :

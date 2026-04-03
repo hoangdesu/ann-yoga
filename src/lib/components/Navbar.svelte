@@ -2,17 +2,18 @@
   import { resolve } from '$app/paths';
   import { page } from '$app/stores';
 
-  // Svelte 5: Use $derived for reactivity that depends on other state/stores.
-  const isActive = $derived((path: string) => {
+  // Helper function to check if a link is active.
+  function isActive(path: string) {
     const currentPath = $page.url.pathname;
-    const resolvedPath = resolve(path);
+    // Using 'as any' to bypass SvelteKit 2's strict route literal types for dynamic variables.
+    const resolvedPath = resolve(path as any);
     
     // Exact match for the current page
     if (path === '/') {
       return currentPath === resolvedPath;
     }
-    return currentPath.startsWith(resolvedPath);
-  });
+    return currentPath.startsWith(resolvedPath) && resolvedPath !== '/';
+  }
 
   // Shared classes for links
   const baseLinkClasses = "transition-colors duration-300 font-notoserif text-lg tracking-tight pb-1 border-b-2";
