@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-  <title>About Ann Yoga</title>
+  <title>About Ann Scarab Yoga</title>
 </svelte:head>
 
 <div class="max-w-7xl mx-auto px-8 py-32 mt-20">

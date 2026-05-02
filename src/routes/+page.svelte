@@ -8,22 +8,22 @@
 </script>
 
 <svelte:head>
-  <title>Ann Yoga | Find Your Balance</title>
-  <meta name="description" content="Find your balance at Ann Yoga. A boutique sanctuary designed to ground your practice in nature’s rhythm. Experience intentional movement in a space crafted for silence and soul." />
+  <title>Ann Scarab Yoga | Find Your Balance</title>
+  <meta name="description" content="Find your balance at Ann Scarab Yoga. A boutique sanctuary designed to ground your practice in nature’s rhythm. Experience intentional movement in a space crafted for silence and soul." />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://hoangdesu.github.io/ann-yoga/" />
-  <meta property="og:title" content="Ann Yoga | Holistic Wellness & Yoga Studio" />
-  <meta property="og:description" content="Find your balance at Ann Yoga. A boutique sanctuary designed to ground your practice in nature’s rhythm. Experience intentional movement in a space crafted for silence and soul." />
-  <meta property="og:image" content="https://hoangdesu.github.io/ann-yoga/images/hero.jpg" />
+  <meta property="og:url" content="https://annscarab.yoga/" />
+  <meta property="og:title" content="Ann Scarab Yoga | Holistic Wellness & Yoga Studio" />
+  <meta property="og:description" content="Find your balance at Ann Scarab Yoga. A boutique sanctuary designed to ground your practice in nature’s rhythm. Experience intentional movement in a space crafted for silence and soul." />
+  <meta property="og:image" content="https://annscarab.yoga/images/hero.jpg" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://hoangdesu.github.io/ann-yoga/" />
-  <meta property="twitter:title" content="Ann Yoga | Holistic Wellness & Yoga Studio" />
-  <meta property="twitter:description" content="Find your balance at Ann Yoga. A boutique sanctuary designed to ground your practice in nature’s rhythm. Experience intentional movement in a space crafted for silence and soul." />
-  <meta property="twitter:image" content="https://hoangdesu.github.io/ann-yoga/images/hero.jpg" />
+  <meta property="twitter:url" content="https://annscarab.yoga/" />
+  <meta property="twitter:title" content="Ann Scarab Yoga | Holistic Wellness & Yoga Studio" />
+  <meta property="twitter:description" content="Find your balance at Ann Scarab Yoga. A boutique sanctuary designed to ground your practice in nature’s rhythm. Experience intentional movement in a space crafted for silence and soul." />
+  <meta property="twitter:image" content="https://annscarab.yoga/images/hero.jpg" />
 </svelte:head>
 
 <section
@@ -35,7 +35,7 @@
     <div class="lg:col-span-5 z-10">
       <span
         class="font-manrope text-xs tracking-[0.2em] uppercase text-primary font-bold mb-4 block mt-8 lg:mt-0"
-        >Est. 2024 • Organic Wellness</span
+        >Est. 2025 • Organic Wellness</span
       >
       <h1
         class="font-notoserif text-6xl md:text-7xl lg:text-8xl leading-[1.1] text-on-surface mb-8 tracking-tighter"

@@ -24,7 +24,7 @@
 <!-- ============ Navbar Bar ============ -->
 <nav class="fixed top-0 w-full z-50 bg-[#fafaf5]/80 backdrop-blur-md shadow-[0_10px_40px_-15px_rgba(26,28,25,0.04)]">
   <div class="flex justify-between items-center h-20 px-8 max-w-7xl mx-auto">
-    <a href={resolve('/')} class="font-notoserif text-2xl font-bold text-olive-900 tracking-tight">Ann Yoga</a>
+    <a href={resolve('/')} class="font-notoserif text-2xl font-bold text-olive-900 tracking-tight">Ann Scarab Yoga</a>
 
     <!-- Desktop Links -->
     <div class="hidden md:flex space-x-12">

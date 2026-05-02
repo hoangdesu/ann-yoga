@@ -1,6 +1,6 @@
-# Ann Yoga
+# Ann Scarab Yoga
 
-Welcome to the Ann Yoga project repository!
+Welcome to the Ann Scarab Yoga project repository!
 
 ## Development
 

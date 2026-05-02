@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-  <title>Ann Yoga - The Tactile Sanctuary</title>
+  <title>Ann Scarab Yoga - The Tactile Sanctuary</title>
 </svelte:head>
 
 <section class="relative overflow-hidden pt-32 pb-20">
